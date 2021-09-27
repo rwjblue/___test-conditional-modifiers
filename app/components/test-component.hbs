@@ -1,0 +1,6 @@
+<button {{on 'click' this.toggle}}>Toggle display</button>
+
+<p>Current value: {{this.show}}</p>
+
+<div {{(if this.show (modifier 'display' display=this.show))}}>Now you see me!!</div>
+{{yield}}
